@@ -241,6 +241,10 @@ button {
 }
 
 @media only screen and (max-width: 720px) {
+  .hero-container span:nth-child(2) {
+    justify-self: left;
+  }
+
   .text-xl {
     font-size: var(--fs400);
   }
