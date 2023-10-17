@@ -1,28 +1,35 @@
 import "./styles/App.css";
-import MoonIcon from "/images/dark-mode-icon.svg";
 
 function App() {
   return (
     <>
       <header id="header" className="header">
         <div className="header-container">
-          <div className="header-contianer-inner">
+          <div className="header-container-inner">
             <nav className="header-navigation">
               <ul className="nav-links">
-                <li className="nav-link">Main Page</li>
-                <li className="nav-link">About</li>
-                <li className="nav-link">My Work</li>
-                <li className="nav-link">Contact</li>
+                <li className="nav-link">
+                  <a href="">Main Page</a>
+                </li>
+                <li className="nav-link">
+                  <a href="">About</a>
+                </li>
+                <li className="nav-link">
+                  <a href="">My Work</a>
+                </li>
+                <li className="nav-link">
+                  <a href="">Contact</a>
+                </li>
               </ul>
             </nav>
             <ContactMeButton />
           </div>
         </div>
-        <img src={MoonIcon} alt="" />
+        <button className="toogle-dark-mode"></button>
       </header>
       <main id="hero" className="hero">
         <div className="hero-container">
-          <div className="hero-text-container">
+          <div className="hero-text">
             <span className="sub-text">wannabe</span>
             <h1 className="text-xl">Web Developer</h1>
           </div>
@@ -82,7 +89,10 @@ function App() {
         </div>
       </section>
       <footer id="footer" className="footer">
-        <p>© 2023 Dawid Gawronski</p>
+        <p>
+          © 2023{" "}
+          <a href="https://github.com/DawidGawronskiDev">Dawid Gawronski</a>
+        </p>
       </footer>
     </>
   );
