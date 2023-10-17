@@ -3,9 +3,17 @@ import "./styles/App.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   function toogleMenu() {
     setMenuOpen(!menuOpen);
+  }
+
+  function toogleDarkMode() {
+    setIsDark(!isDark);
+
+    const root = document.querySelector("#root");
+    root.classList = isDark ? "dark" : "";
   }
 
   return (
@@ -33,7 +41,7 @@ function App() {
             <ContactMeButton />
           </div>
         </div>
-        <button className="toogle-dark-mode"></button>
+        <button className="toogle-dark-mode" onClick={toogleDarkMode}></button>
       </header>
       <main id="hero" className="hero">
         <div className="hero-container">

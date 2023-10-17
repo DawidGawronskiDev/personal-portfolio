@@ -214,6 +214,15 @@ section {
 
 /* ########## REST ########## */
 
+#hero.hero {
+  margin: 0 auto 48px auto;
+}
+
+#footer.footer {
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
 p {
   max-width: 54ch;
 }
@@ -306,4 +315,37 @@ button {
   .toogle-navigation {
     display: block;
   }
+}
+
+/* ########## DARK MODE ########## */
+
+.dark {
+  background-color: var(--bg-color-dark);
+}
+
+.dark * {
+  color: var(--text-dark);
+}
+
+.dark .toggle-dark-mode {
+  aspect-ratio: 1 / 1;
+  width: 40px;
+  -webkit-mask: url("/images/dark-mode-icon.svg") no-repeat 50% 50%;
+  mask: url("/images/dark-mode-icon.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  background-color: var(--color-main);
+  mask-size: cover;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Adjust the color and size as needed */
+}
+
+.dark .hero {
+  width: 100dvw;
+  height: 100dvh;
+
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(129, 120, 247, 0.33) 0%,
+      rgba(32, 34, 72, 0) 100%
+    ),
+    #1e1e1e;
 }
