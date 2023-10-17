@@ -25,16 +25,16 @@ function App() {
             <nav className="header-navigation">
               <ul className="nav-links">
                 <li className="nav-link">
-                  <a href="">Main Page</a>
+                  <a href="#hero">Main Page</a>
                 </li>
                 <li className="nav-link">
-                  <a href="">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li className="nav-link">
-                  <a href="">My Work</a>
+                  <a href="#work">My Work</a>
                 </li>
                 <li className="nav-link">
-                  <a href="">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
