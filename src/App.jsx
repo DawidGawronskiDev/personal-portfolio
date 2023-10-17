@@ -3,7 +3,7 @@ import "./styles/App.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   function toogleMenu() {
     setMenuOpen(!menuOpen);
