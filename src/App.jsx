@@ -1,10 +1,18 @@
+import { useState } from "react";
 import "./styles/App.css";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function toogleMenu() {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
-    <>
-      <header id="header" className="header">
+    <div>
+      <header id="header" className="header" data-menu-open={menuOpen}>
         <div className="header-container">
+          <button className="toogle-navigation" onClick={toogleMenu}></button>
           <div className="header-container-inner">
             <nav className="header-navigation">
               <ul className="nav-links">
@@ -94,7 +102,7 @@ function App() {
           <a href="https://github.com/DawidGawronskiDev">Dawid Gawronski</a>
         </p>
       </footer>
-    </>
+    </div>
   );
 }
 
