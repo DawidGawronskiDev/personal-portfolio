@@ -63,3 +63,191 @@ button {
 
   padding: 8px 16px;
 }
+
+#root > * {
+  width: 90vw;
+  max-width: 1440px;
+
+  margin: 48px auto;
+}
+
+main,
+section {
+  display: grid;
+  place-content: center;
+}
+
+/* ########## HEADER ########## */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 90dvw;
+  max-width: 1440px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-container {
+  flex: 1;
+
+  border-radius: 5px;
+  border: 1px solid rgba(129, 120, 247, 0.3);
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 0.01%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+
+  backdrop-filter: blur(10px);
+
+  padding: 10px;
+}
+
+.header-container-inner {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ########## HERO ########## */
+
+.hero {
+  width: 100dvw;
+  height: 100dvh;
+
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(129, 120, 247, 0.33) 0%,
+      rgba(32, 34, 72, 0) 100%
+    ),
+    #fff;
+}
+
+.hero-container {
+  display: grid;
+  gap: 48px;
+}
+
+.hero-container span:nth-child(2) {
+  justify-self: right;
+}
+
+/* ########## ABOUT ########## */
+
+.about {
+  display: grid;
+}
+
+.about ul {
+  display: grid;
+  gap: 64px;
+}
+
+.about li {
+  display: grid;
+  gap: 12px;
+}
+
+.about li:nth-child(even) {
+  text-align: right;
+  float: right;
+}
+
+/* ########## WORK ########## */
+
+.work {
+  width: 100dvw;
+  height: 100dvh;
+
+  display: grid;
+}
+
+/* ########## CONTACT ########## */
+
+.contact {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-container {
+  display: grid;
+  justify-items: left;
+  gap: 24px;
+}
+
+/* ########## FOOTER ########## */
+
+.footer {
+  display: grid;
+  place-content: center;
+}
+
+/* ########## CONTACT ME BUTTON ########## */
+
+.contact-me-button {
+  border-radius: 5px;
+  border: 1px solid #5f54f8;
+
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+
+  background: var(--color-main);
+  color: #ffffff;
+}
+
+/* ########## REST ########## */
+
+p {
+  max-width: 54ch;
+}
+
+* {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+a:hover {
+  color: var(--color-main);
+}
+
+button {
+  cursor: pointer;
+}
+
+.toogle-dark-mode {
+  aspect-ratio: 1 / 1;
+  width: 40px;
+  -webkit-mask: url("/images/dark-mode-icon.svg") no-repeat 50% 50%;
+  mask: url("/images/dark-mode-icon.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  background-color: var(--color-main);
+  mask-size: cover;
+}
+
+@media only screen and (max-width: 720px) {
+  .text-xl {
+    font-size: var(--fs400);
+  }
+  .text-l {
+    font-size: var(--fs200);
+  }
+  .text-m {
+    font-size: var(--fs100);
+  }
+}
