@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+
+:root {
+  --color-main: #8178f7;
+
+  /* DARK MODE */
+  --bg-color-dark: #1e1e1e;
+  --text-dark: #ffffff;
+  --text-accent-dark: #d2d2da;
+
+  /* LIGHT MODE */
+  --bg-color-light: #ffffff;
+  --text-light: #1e1e1e;
+  --text-accent-light: #959595;
+
+  --ff: "Space Grotesk", sans-serif;
+
+  --fs100: 1rem;
+  --fs150: 1.5rem;
+  --fs200: 2rem;
+  --fs400: 4rem;
+  --fs800: 8rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+.nav-link {
+  font-size: var(--fs100);
+  font-weight: var(--fw-regular);
+}
+
+.text-xl {
+  font-size: var(--fs800);
+  font-weight: var(--fw-bold);
+}
+
+.text-l {
+  font-size: var(--fs400);
+  font-weight: var(--fw-bold);
+}
+
+.sub-text {
+  font-size: var(--fs200);
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.body {
+  font-size: var(--fs150);
+  font-weight: var(--fw-regular);
+}
+
+* {
+  font-family: var(--ff);
+}
+
+button {
+  font-size: var(--fs150);
+  font-weight: var(--fw-bold);
+
+  border-radius: 10px;
+
+  padding: 8px 16px;
+}
